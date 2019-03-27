@@ -13,6 +13,7 @@ $("#randomSelected").text(compGuess);
 // assign the textContent to variable a
 var a = $("#randomSelected").text();
 // function generating random numbers btn 1 and 12
+var crystalGuess = () =>{
 return Math.ceil(Math.random()*12);
 }
 // change the value of the images to the randomly selected number by calling the above function
@@ -33,6 +34,8 @@ $("img").click(function(){
         lose();
     }
     })
+        
+    }
 
  function win() {
         count++;
