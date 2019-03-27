@@ -5,7 +5,6 @@ var conuntLose = 0;
 // select the images on the crystal button with 
 var images =document.querySelectorAll("img");
 reset = () =>{
-    alert("reset called");
     num =  0;
 // generate random number btn 19 and 120
 var compGuess = Math.floor((Math.random()*101)+19);
@@ -14,7 +13,6 @@ $("#randomSelected").text(compGuess);
 // assign the textContent to variable a
 var a = $("#randomSelected").text();
 // function generating random numbers btn 1 and 12
-var crystalGuess = () =>{
 return Math.ceil(Math.random()*12);
 }
 // change the value of the images to the randomly selected number by calling the above function
@@ -35,8 +33,6 @@ $("img").click(function(){
         lose();
     }
     })
-        
-    }
 
  function win() {
         count++;
