@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CrystalsCollectorGame</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styel.css">
+    
+</head>
+
+<body>
+<div class="fluid-container p-3 my-5">
+    <h1 class="py-2 mt-0">CrystalCalculator!</h1>
+    <div class="row">
+        <div class="col-lg-6 text-alignment-center instraction ">
+            <p>You will be given a random number at the start of the game</p>
+            <p>There are four crystals below. By clickig on a crystal you will add a specific 
+                amount of point to your score.
+            </p>
+            <p>You will win the game by matching your total score to random number.
+                You will lose the game if your total score is more than random number.
+            </p>
+            <p>The value of the crystal is hidden from you until you click on it</p>
+            <p>Each time the game starts the value of the crystal will be</p>
+        </div>
+    </div>
+    <div>
+        <div class="row ">
+            <div class="col-lg-6">
+        <div class="row">
+            <div class="col-lg-9">
+                <p id="randomSelected" class="text-center"></p>
+            </div>
+            <div class="col-lg-3 display p-2 my-2">
+                <p>Win: <span id="win"></span></p>
+                <p>Loses: <span id="lose"></span></p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class = " row">
+        <div class="col-lg-6">
+        <div class="row images">
+            <div class="col-lg-3">
+             <img  class="img-fluid" src="assets/image/img1.jpg" ">
+             </div>
+             <div class="col-lg-3">
+                    <img  class="img-fluid" src="assets/image/img2.jpg" ">
+                    </div>
+                    <div class="col-lg-3">
+                            <img  class="img-fluid" src="assets/image/img3.jpg" ">
+                            </div>
+                            <div class="col-lg-3">
+                                    <img  class="img-fluid" src="assets/image/img4.jpg" ">
+                                    </div>
+        
+        </div>
+        </div>
+    </div>
+    <p id="score" class="my-2 py-1">Your total score is:</p>
+    <div class="row justify-content-center">
+            <div class="col text-center">
+
+                <p id="random"></p>
+            </div>
+    </div>
+
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+    </script>   
+    <script src="assets/javascript/game.js">
+    </script>
+</div>
+</body>
+</html>
